@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" class="scrollBar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Boot Strap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+<!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/07b09dcc76.js" crossorigin="anonymous"></script>
+<!-- CSS -->
+    <link href="static/assets/css/styles.css" rel="stylesheet">
+
+    <title>OWASP VITC| Valorant</title>
+</head>
+<body>
+<!-- Header -->
+    <header class="main-header">
+        <navbar>
+          <nav class="navbar navbar-expand-lg navbar-dark bg-transparent navbar-custom">
+            <div class="container-fluid">
+              <logo><img src="{{url_for('static', filename='assets/img/OWASP_Logo_White.png')}}"></logo>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{{url_for('index')}}">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{{url_for('rules')}}">Rules</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{{url_for('data')}}">Register</a>
+                  </li>
+              </div>
+            </div>
+          </nav>
+        </navbar>
+<!-- homepage central content -->
+        <div class="content">
+            <h1>
+              Get ready for an action packed weekend!
+            </h1>
+            <div>
+              <div>
+                <button class="btn-home">
+                  <span class="btn__inner">
+                    <span class="btn__slide"></span>
+                    <span class="btn__content"><a href="#">Let's Play</a></span>
+                  </span>
+                </button>
+              </div>
+          </div>
+    </header>
+<!-------------Sections------------------>
+<section>
+<!-- cards -->
+<div class="main">
+  <ul class="cards">
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="{{url_for('static', filename='assets/img/val1.jpg')}}"></div>
+        <div class="card_content">
+          <h2 class="card_title">Rules</h2>
+          <p class="card_text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet itaque rem laborum perspiciatis assumenda fugit magnam obcaecati, officia, voluptatum minima iusto veniam eum quis sequi. Excepturi repudiandae atque doloremque labore nihil assumenda ducimus rerum, repellendus nam molestiae cum inventore enim sit amet laborum ullam ut odit incidunt reprehenderit quia saepe.</p>
+          <button class="btn-home">
+            <span class="btn__inner">
+              <span class="btn__slide"></span>
+              <span class="btn__content card_btn"><a href="#">Know more</a></span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </li>
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="{{url_for('static', filename='assets/img/val5.jpg')}}"></div>
+        <div class="card_content">
+          <h2 class="card_title">Team Work</h2>
+          <p class="card_text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident praesentium quidem, soluta dolores incidunt at sunt aut ipsa quis nesciunt velit tempore consequatur, quos natus quod vitae minima neque placeat reprehenderit nulla facilis sit eius minus consectetur? Necessitatibus veniam repudiandae excepturi sequi doloribus quo repellendus esse! Necessitatibus, eaque ullam! Eveniet?</p>
+          <button class="btn-home">
+            <span class="btn__inner">
+              <span class="btn__slide"></span>
+              <span class="btn__content card_btn"><a href="#">View</a></span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </li>
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="{{url_for('static', filename='assets/img/val3.png')}}"></div>
+        <div class="card_content">
+          <h2 class="card_title">Prize</h2>
+          <p class="card_text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi doloribus aperiam impedit. Ab, adipisci natus odit facere quas dolore esse ullam nostrum soluta officiis optio sed aperiam nemo ipsum voluptas aspernatur, error quibusdam similique, dolorum repellendus laborum sapiente inventore architecto. Blanditiis tempora voluptatem, saepe rerum dicta asperiores temporibus maxime adipisci!</p>
+          <button class="btn-home">
+            <span class="btn__inner">
+              <span class="btn__slide"></span>
+              <span class="btn__content card_btn"><a href="#">See more</a></span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </li>
+  </section>
+
+<!-- -----------Footer-------------- -->
+    <footer>
+      <ul class="social-media-links">
+        <li>
+          <i class="fab fa-discord fa-4x"></i>
+        </li>
+        <li>
+          <i class="fab fa-instagram fa-4x"></i>
+        </li>
+        <li>
+          <i class="fab fa-twitter fa-4x"></i>
+        </li>
+      </ul>
+            
+            
+        <p>OWASP VITC &copy;, 2021 All rights reserved.</p>
+    </footer>
+
+
+
+
+
+
+<!-- Java Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</body>
+</html>
