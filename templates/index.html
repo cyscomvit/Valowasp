@@ -9,7 +9,14 @@
 <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/07b09dcc76.js" crossorigin="anonymous"></script>
 <!-- CSS -->
-    <link href="static/assets/css/styles.css" rel="stylesheet">
+    <link href="../CSS/index.css" rel="stylesheet">
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet">
 
     <title>OWASP VITC| Valorant</title>
 </head>
@@ -19,20 +26,22 @@
         <navbar>
           <nav class="navbar navbar-expand-lg navbar-dark bg-transparent navbar-custom">
             <div class="container-fluid">
-              <logo><img src="{{url_for('static', filename='assets/img/OWASP_Logo_White.png')}}"></logo>
+              <logo><a href="https://owaspvit.com/"><img src="../images/OWASP_Logo_White.png"></a></logo>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="{{url_for('index')}}">Home</a>
+                    <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="{{url_for('rules')}}">Rules</a>
+                    <!-- <a class="nav-link active" aria-current="page" href="#">Rules</a> -->
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="{{url_for('data')}}">Register</a>
+                    <div style="font-family: 'Cinzel Decorative', cursive;">
+                      <a class="nav-link active" aria-current="page" href="https://owaspvit.com/"><i class="fas fa-file-signature"></i>Register</a>
+                    </div>
                   </li>
               </div>
             </div>
@@ -41,34 +50,39 @@
 <!-- homepage central content -->
         <div class="content">
             <h1>
-              Get ready for an action packed weekend!
+              <div style="font-family: 'Cinzel Decorative', cursive;">OWASP VITC presents</div> <div style="font-family: 'Cinzel Decorative', cursive;"><b>"VALOWASP"</b></div>
             </h1>
             <div>
               <div>
                 <button class="btn-home">
                   <span class="btn__inner">
                     <span class="btn__slide"></span>
-                    <span class="btn__content"><a href="#">Let's Play</a></span>
+                    <span class="btn__content"><a href="#explore"><div style="font-family: 'Cinzel Decorative', cursive;">Explore!</div></a></span>
                   </span>
                 </button>
               </div>
           </div>
     </header>
 <!-------------Sections------------------>
-<section>
+<section id="explore">
 <!-- cards -->
 <div class="main">
   <ul class="cards">
     <li class="cards_item">
       <div class="card">
-        <div class="card_image"><img src="{{url_for('static', filename='assets/img/val1.jpg')}}"></div>
+        <div class="card_image"><img src="../images/val8.jpg"></div>
         <div class="card_content">
-          <h2 class="card_title">Rules</h2>
-          <p class="card_text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet itaque rem laborum perspiciatis assumenda fugit magnam obcaecati, officia, voluptatum minima iusto veniam eum quis sequi. Excepturi repudiandae atque doloremque labore nihil assumenda ducimus rerum, repellendus nam molestiae cum inventore enim sit amet laborum ullam ut odit incidunt reprehenderit quia saepe.</p>
+          <h2 class="card_title">Schedule</h2>
+          <p class="card_text"><br>Feeling bored staying home ? Wishing you could meet your friends and have fun together?<br>
+            "Here comes the party!" , <b>OWASP</b> presents the most lethal Valorant tournament - <B>"VALOWASP"</B> <bR>
+            So what are you waiting for? , Register for our fun filled gaming !<br><br>
+            Blend your style and experience on a competitive stage.Get your squad or come solo and be part of this exhilarating event.<br>
+            <br><B>Date: 28-08-2021 (Saturday)</B><br><br>
+            <b>Time: 12:00PM</b></p><br>
           <button class="btn-home">
             <span class="btn__inner">
               <span class="btn__slide"></span>
-              <span class="btn__content card_btn"><a href="#">Know more</a></span>
+              <span class="btn__content card_btn"><a href="./schedule.html">View</a></span>
             </span>
           </button>
         </div>
@@ -76,14 +90,19 @@
     </li>
     <li class="cards_item">
       <div class="card">
-        <div class="card_image"><img src="{{url_for('static', filename='assets/img/val5.jpg')}}"></div>
+        <div class="card_image"><img src="../images/val10.jpg"></div>
         <div class="card_content">
-          <h2 class="card_title">Team Work</h2>
-          <p class="card_text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident praesentium quidem, soluta dolores incidunt at sunt aut ipsa quis nesciunt velit tempore consequatur, quos natus quod vitae minima neque placeat reprehenderit nulla facilis sit eius minus consectetur? Necessitatibus veniam repudiandae excepturi sequi doloribus quo repellendus esse! Necessitatibus, eaque ullam! Eveniet?</p>
+          <h2 class="card_title">Rules & Winner Perks</h2>
+          <p class="card_text"><br>
+            •    All event-related queries are handled on Discord, so once registered join the channel for more information.<br><br>
+
+            •    You are welcome to register as a team of five, but if you register as a solo participant, we will combine you with other solo participants to make a team of five for the match. We will form the teams in consideration that they will all be balanced at the game level.<br><br>
+            •    The match schedule for round-1 will be made available on the discord and our website by 10 am on 28-8-2021. The match schedule for the next round will be announced 10 minutes prior to each round. No alterations to the schedule will be considered.<br>
+          </p>
           <button class="btn-home">
             <span class="btn__inner">
               <span class="btn__slide"></span>
-              <span class="btn__content card_btn"><a href="#">View</a></span>
+              <span class="btn__content card_btn"><a href="./rules.html">Know more</a></span>
             </span>
           </button>
         </div>
@@ -91,14 +110,23 @@
     </li>
     <li class="cards_item">
       <div class="card">
-        <div class="card_image"><img src="{{url_for('static', filename='assets/img/val3.png')}}"></div>
+        <div class="card_image"><img src="../images/val3.png"></div>
         <div class="card_content">
-          <h2 class="card_title">Prize</h2>
-          <p class="card_text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi doloribus aperiam impedit. Ab, adipisci natus odit facere quas dolore esse ullam nostrum soluta officiis optio sed aperiam nemo ipsum voluptas aspernatur, error quibusdam similique, dolorum repellendus laborum sapiente inventore architecto. Blanditiis tempora voluptatem, saepe rerum dicta asperiores temporibus maxime adipisci!</p>
+          <h2 class="card_title">FAQs</h2>
+          <p class="card_text">
+            <br>What type of tournament is this?<br>
+            For the Qualification Round, it is a knockout tournament. Later, depending on the teams for the semi-finals round, we will have fixtures based on your team's average combact score.<br><br>
+                    For Example:<br>
+                    <b>Match 1</b><br>
+                    TEAM A VS TEAM B <br>{(A WINNER) - Total Combact Socre - 2200}<br>
+                    <b>Match 2</b><br>
+                    TEAM C VS TEAM D <br>(C WINNER) - Total Combact Socre - 2300}<br>
+                    So TEAM C will be the table topper's followed by TEAM A.<br>
+          </p>
           <button class="btn-home">
             <span class="btn__inner">
               <span class="btn__slide"></span>
-              <span class="btn__content card_btn"><a href="#">See more</a></span>
+              <span class="btn__content card_btn"><a href="./faq.html">See more</a></span>
             </span>
           </button>
         </div>
@@ -110,13 +138,44 @@
     <footer>
       <ul class="social-media-links">
         <li>
-          <i class="fab fa-discord fa-4x"></i>
+          <a href="https://discord.gg/sHTakBsv">
+            <i class="fab fa-discord fa-2x"></i>
+          </a>
         </li>
         <li>
-          <i class="fab fa-instagram fa-4x"></i>
+          <a href="https://www.instagram.com/owaspvit/">
+            <i class="fab fa-instagram fa-2x"></i>
+          </a>
         </li>
         <li>
-          <i class="fab fa-twitter fa-4x"></i>
+          <a href="https://twitter.com/owaspvit">
+            <i class="fab fa-twitter fa-2x"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://blog.owaspvit.com/">
+            <i class="fab fa-blogger-b fa-2x"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/company/owasp-vit-student-chapter/">
+            <i class="fab fa-linkedin-in fa-2x"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/owaspvit">
+            <i class="fab fa-github fa-2x"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://medium.owaspvit.com/">
+            <i class="fab fa-medium-m fa-2x"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://m.facebook.com/owaspvit/">
+            <i class="fab fa-facebook fa-2x"></i>
+          </a>
         </li>
       </ul>
             
