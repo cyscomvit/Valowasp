@@ -1,0 +1,44 @@
+/* ------------Imported Fonts ---------------------*/
+
+*{
+    margin:0;
+    padding:0;
+}
+
+/* -------------------Navbar---------------------- */
+logo img{
+    max-height:100px;
+    background-color:transparent;
+}
+/* Navbar */
+.nav-item{
+    font-family: 'Roboto', sans-serif;
+}
+
+@media screen and (min-width:200px) {
+    .nav-item{
+        font-size:1rem;
+    }
+    h1{
+        font-size:1.4rem;
+    }
+}
+
+@media screen and (min-width:370px) {
+    .nav-item{
+        font-size:1.5em;
+    }
+    
+}
+
+@media screen and (min-width:780px) {
+    .nav-item{
+        font-size:2rem;
+    }
+    
+}
+@media screen and (min-width:1000px) {
+  .nav-item{
+    padding:2rem;
+  }
+}

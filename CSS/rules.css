@@ -5,6 +5,27 @@
     box-sizing: border-box;
 }
 
+/* ------------------------------ScrollBar---------------------------------------------------- */
+.scrollBar::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  .scrollBar::-webkit-scrollbar-thumb {
+    background: #870000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #190A05, #870000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #190A05, #870000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  
+  .scrollBar::-webkit-scrollbar-thumb:hover {
+    background: #870000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #190A05, #870000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #190A05, #870000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+
+
+
+
+
 body {
     font-family: 'Montserrat', sans-serif;
     background-image: url("https://images6.alphacoders.com/107/thumb-1920-1072679.jpg");
@@ -74,4 +95,42 @@ h1 {
     html {
         font-size: 14px;
     }
+}
+
+/* -------------------Navbar---------------------- */
+logo img{
+    max-height:100px;
+    background-color:transparent;
+}
+/* Navbar */
+.nav-item{
+    font-family: 'Roboto', sans-serif;
+}
+
+@media screen and (min-width:200px) {
+    .nav-item{
+        font-size:1rem;
+    }
+    h1{
+        font-size:1.4rem;
+    }
+}
+
+@media screen and (min-width:370px) {
+    .nav-item{
+        font-size:1.5em;
+    }
+    
+}
+
+@media screen and (min-width:780px) {
+    .nav-item{
+        font-size:2rem;
+    }
+    
+}
+@media screen and (min-width:1000px) {
+  .nav-item{
+    padding:2rem;
+  }
 }
