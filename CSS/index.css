@@ -350,17 +350,44 @@ img {
 }
 
 
+.banner{
+  background-image: url('../images/val21.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding:0.5rem;
+  /* border:solid red 2px; */
+  border-radius: 20px;
+  box-shadow: 5px 5px 20px 0px rgba(0, 80, 253, 0.61);
+}
 
+.banner p{
+  font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
+  color:white;
+}
 
+.register{
+  background-image: url('../images/val24.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding:0.5rem;
+  /* border:solid red 2px; */
+  border-radius: 20px;
+  box-shadow: 5px 5px 20px 0px rgba(72, 253, 1, 0.61);
+}
 
-
-
-
-
-
-
-
-
+.register p{
+  font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
+  color:white;
+  
+}
 
 
 
