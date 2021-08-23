@@ -9,7 +9,7 @@
 <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/07b09dcc76.js" crossorigin="anonymous"></script>
 <!-- CSS -->
-    <link href="../Valowasp/CSS/index.css" rel="stylesheet">
+    <link href="CSS/index.css" rel="stylesheet">
 <!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +18,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet">
 
-    <title>OWASP VITC| Valorant</title>
+
+
+    <title>OWASP VITC | VALOWASP</title>
 </head>
 <body>
 <!-- Header -->
@@ -26,7 +28,7 @@
         <navbar>
           <nav class="navbar navbar-expand-lg navbar-dark bg-transparent navbar-custom">
             <div class="container-fluid">
-              <logo><a href="https://owaspvit.com/"><img src="../Valowasp/images/OWASP_Logo_White.png"></a></logo>
+              <logo><a href="https://owaspvit.com/"><img src="images/OWASP_Logo_White.png"></a></logo>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -40,7 +42,7 @@
                   </li>
                   <li class="nav-item">
                     <div style="font-family: 'Cinzel Decorative', cursive;">
-                      <a class="nav-link active" aria-current="page" href="https://owaspvit.com/"><i class="fas fa-file-signature"></i>Register</a>
+                      <!-- <a class="nav-link active" aria-current="page" href="https://owaspvit.com/"><i class="fas fa-file-signature"></i>Register</a> -->
                     </div>
                   </li>
               </div>
@@ -54,12 +56,13 @@
             </h1>
             <div>
               <div>
+                <a href="#explore">
                 <button class="btn-home">
                   <span class="btn__inner">
                     <span class="btn__slide"></span>
-                    <span class="btn__content"><a href="#explore"><div style="font-family: 'Cinzel Decorative', cursive;">Explore!</div></a></span>
+                    <span class="btn__content"><div style="font-family: 'Cinzel Decorative', cursive;">Explore!</div></div></span>
                   </span>
-                </button>
+                </button></a>
               </div>
           </div>
     </header>
@@ -70,7 +73,7 @@
   <ul class="cards">
     <li class="cards_item">
       <div class="card">
-        <div class="card_image"><img src="../Valowasp/images/val4.jpg"></div>
+        <div class="card_image"><img src="images/val4.jpg"></div>
         <div class="card_content">
           <h2 class="card_title">Schedule</h2>
           <p class="card_text"><br>Feeling bored staying home ? Wishing you could meet your friends and have fun together?<br>
@@ -79,38 +82,43 @@
             Blend your style and experience on a competitive stage.Get your squad or come solo and be part of this exhilarating event.<br>
             <br><B>Date: 28-08-2021 (Saturday)</B><br><br>
             <b>Time: 12:00PM</b></p><br>
+        <a href="templates/schedule.html">
           <button class="btn-home">
             <span class="btn__inner">
               <span class="btn__slide"></span>
-              <span class="btn__content card_btn"><a href="templates/schedule.html">View</a></span>
+              <span class="btn__content card_btn">View</span>
             </span>
           </button>
+        </a>
         </div>
       </div>
     </li>
     <li class="cards_item">
       <div class="card">
-        <div class="card_image"><img src="../Valowasp/images/val10.jpg"></div>
+        <div class="card_image"><img src="images/val10.jpg"></div>
         <div class="card_content">
           <h2 class="card_title">Rules & Winner Perks</h2>
           <p class="card_text"><br>
             •    All event-related queries are handled on Discord, so once registered join the channel for more information.<br><br>
+              <br><br>
+            <b>Winnig team will be rewarded Rs. 1000 cash prize.</b><br><br><br>
 
             •    You are welcome to register as a team of five, but if you register as a solo participant, we will combine you with other solo participants to make a team of five for the match. We will form the teams in consideration that they will all be balanced at the game level.<br><br>
-            •    The match schedule for round-1 will be made available on the discord and our website by 10 am on 28-8-2021. The match schedule for the next round will be announced 10 minutes prior to each round. No alterations to the schedule will be considered.<br>
           </p>
+          <a href="templates/Rules.html">
           <button class="btn-home">
             <span class="btn__inner">
               <span class="btn__slide"></span>
-              <span class="btn__content card_btn"><a href="../Valowasp/templates/Rules.html">Know more</a></span>
+              <span class="btn__content card_btn">Read rules</span>
             </span>
           </button>
+        </a>
         </div>
       </div>
     </li>
     <li class="cards_item">
       <div class="card">
-        <div class="card_image"><img src="../Valowasp/images/val3.png"></div>
+        <div class="card_image"><img src="images/val3.png"></div>
         <div class="card_content">
           <h2 class="card_title">FAQs</h2>
           <p class="card_text">
@@ -118,20 +126,62 @@
             For the Qualification Round, it is a knockout tournament. Later, depending on the teams for the semi-finals round, we will have fixtures based on your team's average combact score.<br><br>
                     For Example:<br>
                     <b>Match 1</b><br>
-                    TEAM A VS TEAM B <br>{(A WINNER) - Total Combact Socre - 2200}<br>
+                    TEAM A VS TEAM B <br>{(A WINNER) - Total Combact Score - 2200}<br>
                     <b>Match 2</b><br>
-                    TEAM C VS TEAM D <br>(C WINNER) - Total Combact Socre - 2300}<br>
+                    TEAM C VS TEAM D <br>(C WINNER) - Total Combact Score - 2300}<br>
                     So TEAM C will be the table topper's followed by TEAM A.<br>
           </p>
+          <a href="templates/FAQ.html">
           <button class="btn-home">
             <span class="btn__inner">
               <span class="btn__slide"></span>
-              <span class="btn__content card_btn"><a href="../Valowasp/templates/FAQ.html">See more</a></span>
+              <span class="btn__content card_btn">See more</span>
             </span>
           </button>
+        </a>
         </div>
       </div>
     </li>
+    <div class="section_2">
+      <div class="banner container">
+        <p>
+          For further queries and more interactive sessions join our OWASP VITC's server !
+          <div>
+            <div>
+              <a href="https://discord.gg/sHTakBsv">
+              <button class="btn-home">
+                <span class="btn__inner">
+                  <span class="btn__slide"></span>
+                  <span class="btn__content"><div style="font-family: 'Cinzel Decorative', cursive;">Join</div></span>
+                </span>
+              </button>
+            </a>
+            </div>
+        </div>
+        </p>
+      </div>
+      <div class="container register">
+        <p>
+          Get ready for an action packed weekend !!!
+          <div>
+            <div>
+              <a href="https://owaspvit.com/">
+              <button class="btn-home">
+                <span class="btn__inner">
+                  <span class="btn__slide"></span>
+                  <span class="btn__content"><div style="font-family: 'Cinzel Decorative', cursive;">Register</div></span>
+                </span>
+              </button>
+            </a>
+            </div>
+        </div>
+        </p>
+      </div>
+    </div>
+    
+      
+  </div>
+
   </section>
 
 <!-- -----------Footer-------------- -->
