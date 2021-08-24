@@ -18,15 +18,15 @@ font-family: 'Sorts Mill Goudy', serif;*/
   }
   
   .scrollBar::-webkit-scrollbar-thumb {
-    background: #004974;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to top, #190A05, #004974);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to bottom, #190A05, #004974); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #098d31;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #190A05, #098d31);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #190A05, #098d31); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
   
   .scrollBar::-webkit-scrollbar-thumb:hover {
-    background: #004974;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to bottom, #190A05, #004974);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to top, #190A05, #004974); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #098d31;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #190A05, #098d31);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #190A05, #098d31); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
 
 /* NAvbar and Headings */
@@ -101,7 +101,7 @@ logo img{
     --button-text-color-hover: var(--button-background-color);
     --border-color: #7D8082;
     --button-background-color: #ece8e1;
-    --highlight-color: #02457cd2;
+    --highlight-color: #088619d2;
     --button-inner-border-color: transparent;
     --button-bits-color: var(--background-color);
     --button-bits-color-hover: var(--button-background-color);
@@ -230,7 +230,7 @@ a{
 }
 
 body{
-    background-image: url('../images/val34.png');
+    background-image: url('../images/val36.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -266,4 +266,12 @@ li{
 .register-btn{
     margin:1rem;
     text-align: center;
+}
+
+.instr{
+  background: linear-gradient(rgba(0, 0, 0, 0.781),rgba(0, 0, 0, 0.788));
+  padding: 1rem;
+  border-bottom-left-radius: 5rem;
+  border-top-right-radius: 5rem;
+  /* border-radius: 5rem; */
 }
