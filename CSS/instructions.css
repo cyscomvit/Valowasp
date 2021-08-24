@@ -12,57 +12,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Sorts+Mill+Goudy&display=swap'); /* font-family: 'Cinzel Decorative', cursive;
 font-family: 'Sorts Mill Goudy', serif;*/
 
-/* html */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    transition: all 0.3s ease-out;
-}
-
-a:hover{
-    color:black;
-}
-
-logo img{
-    max-height:100px;
-    background-color:transparent;
-}
-
 /* ------------------------------ScrollBar---------------------------------------------------- */
 .scrollBar::-webkit-scrollbar {
     width: 10px;
   }
   
   .scrollBar::-webkit-scrollbar-thumb {
-    background: #870000;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to top, #190A05, #870000);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to bottom, #190A05, #870000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #098d31;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #190A05, #098d31);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #190A05, #098d31); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
   
   .scrollBar::-webkit-scrollbar-thumb:hover {
-    background: #870000;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to bottom, #190A05, #870000);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to top, #190A05, #870000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #098d31;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #190A05, #098d31);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #190A05, #098d31); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
 
-/* --------------------------------Header---------------------------------------------- */
-.main-header{
-    background-image:
-    linear-gradient(to bottom, rgba(26, 14, 14, 0.459), rgba(0, 0, 0, 0)),
-    url('../images/val2.jpg');
-    background-position:top;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height:95vh;
-    color:rgba(255, 255, 255, 0.829);
-    position: relative;
+/* NAvbar and Headings */
+
+/* .head1{
+    margin-top: 2rem;
+    color: whitesmoke;
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 3rem;
     text-align: center;
+} */
+
+/* -------------------Navbar---------------------- */
+logo img{
+    max-height:100px;
+    background:transparent;
 }
+
 
 /* Navbar */
 .nav-item{
     font-family: 'Roboto', sans-serif;
+    color:white
 }
 
 @media screen and (min-width:200px) {
@@ -85,33 +72,12 @@ background: linear-gradient(to top, #190A05, #870000); /* W3C, IE 10+/ Edge, Fir
     .nav-item{
         font-size:2rem;
     }
-    .content h1{
-      font-size: 3rem;
-    }
+    
 }
 @media screen and (min-width:1000px) {
   .nav-item{
     padding:2rem;
   }
-}
-
-/* ------------------------------HOME PAGE  BUTTON--------------------------------------- */
-
-/* for content */
-.content{
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-
-}
-.content h1{
-    color: whitesmoke;
-    text-shadow: black;
-}
-.content p{
-    font-size: 2rem;
-    font-family: 'Caveat', cursive;
 }
 
 /* for button */
@@ -135,7 +101,7 @@ background: linear-gradient(to top, #190A05, #870000); /* W3C, IE 10+/ Edge, Fir
     --button-text-color-hover: var(--button-background-color);
     --border-color: #7D8082;
     --button-background-color: #ece8e1;
-    --highlight-color: #ff4655;
+    --highlight-color: #088619d2;
     --button-inner-border-color: transparent;
     --button-bits-color: var(--background-color);
     --button-bits-color-hover: var(--button-background-color);
@@ -258,168 +224,54 @@ a{
     color:black;
 }
 
+.main-head{
+    text-align: center;
+    font-size: 2rem;
+}
 
-
-/* -------------------------------------Section---------------------------------------------------- */
-
-section{
-    background-image: url('../images/val6.jpg');
+body{
+    background-image: url('../images/val36.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    color:rgb(255, 255, 255);
 }
 
-/* cards */
-.main{
-  max-width: 1200px;
-  margin: 0 auto;
+
+/* @media screen and (min-width: 500px) {
+    .para1{
+        font-size: 2rem;
+    }
+    
 }
 
-.main h1 {
-    font-size: 24px;
-    font-weight: 400;
+@media screen and (min-width: 100px) {
+    .para1{
+        font-size: 1.8rem;
+    }
+} */
+
+li{
+    margin-bottom:0.5rem;
+}
+
+
+.para1{
+    margin-top:1rem;
+    margin-bottom:1rem;
+    font-size: 2rem;
     text-align: center;
 }
 
-img {
-  height: auto;
-  max-width: 100%;
-  vertical-align: middle;
+.register-btn{
+    margin:1rem;
+    text-align: center;
 }
 
-.cards{
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
-.cards_item {
-  display: flex;
+.instr{
+  background: linear-gradient(rgba(0, 0, 0, 0.781),rgba(0, 0, 0, 0.788));
   padding: 1rem;
-}
-
-@media (min-width: 40rem) {
-  .cards_item {
-    width: 50%;
-  }
-}
-
-@media (min-width: 56rem) {
-  .cards_item {
-    width: 33.3333%;
-  }
-}
-
-.card {
-  background-color: rgb(0, 0, 0);
-  border-radius: 1rem;
-  /* box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25); */
-  box-shadow: 5px 5px 20px 0px rgba(240, 6, 6, 0.61);
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-}
-
-.card:hover{
-    transform: translateY(30px);
-}
-
-.card_content {
-  padding: 1rem;
-  background-color: black;
-}
-
-.card_title {
-  color: #ffffff;
-  font-size: 1.1rem;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: capitalize;
-  margin: 0px;
-}
-
-.card_text {
-  color: #ffffff;
-  font-size: 0.875rem;
-  line-height: 1.5;
-  margin-bottom: 1.25rem;    
-  font-weight: 400;
-}
-
-
-.banner{
-  background-image: url('../images/val21.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  padding:0.5rem;
-  /* border:solid red 2px; */
-  border-radius: 20px;
-  box-shadow: 5px 5px 20px 0px rgba(0, 80, 253, 0.61);
-}
-
-.banner p{
-  font-size: 2rem;
-  font-family: 'Roboto', sans-serif;
-  color:white;
-}
-
-.register{
-  background-image: url('../images/val24.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  padding:0.5rem;
-  /* border:solid red 2px; */
-  border-radius: 20px;
-  box-shadow: 5px 5px 20px 0px rgba(72, 253, 1, 0.61);
-}
-
-.register p{
-  font-size: 2rem;
-  font-family: 'Roboto', sans-serif;
-  color:white;
-  
-}
-
-
-
-/* -------------------------------------Footer-------------------------------------------------- */
-
-footer{
-    color:rgb(226, 34, 34);;
-    background-color: rgb(0, 0, 0);
-    text-align:center;
-    padding: 2rem;
-}
-
-footer ul{
-    list-style: none;
-    display:inline;
-}
-footer li{
-    display:inline-block;
-}
-
-.social-media-links i{
-    margin:3rem;
-    color:rgb(226, 34, 34);
-}
-
-
-/* button color change krne ki ninja teknique */
-
-.btn-blue{
-  --highlight-color: #0a3feee1 !important;
-}
-
-.btn-green {
-  --highlight-color: #07ce4a !important;
+  border-bottom-left-radius: 5rem;
+  border-top-right-radius: 5rem;
+  /* border-radius: 5rem; */
 }

@@ -254,7 +254,7 @@ background: linear-gradient(to right, #e74c3c, #000000); /* W3C, IE 10+/ Edge, F
     --button-text-color-hover: var(--button-background-color);
     --border-color: #7D8082;
     --button-background-color: #ece8e1;
-    --highlight-color: #ff4655;
+    --highlight-color: #e7d31ace;
     --button-inner-border-color: transparent;
     --button-bits-color: var(--background-color);
     --button-bits-color-hover: var(--button-background-color);
