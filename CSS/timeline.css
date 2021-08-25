@@ -254,7 +254,7 @@ background: linear-gradient(to right, #e74c3c, #000000); /* W3C, IE 10+/ Edge, F
     --button-text-color-hover: var(--button-background-color);
     --border-color: #7D8082;
     --button-background-color: #ece8e1;
-    --highlight-color: #e7d31ace;
+    --highlight-color: #fdf900e7;
     --button-inner-border-color: transparent;
     --button-bits-color: var(--background-color);
     --button-bits-color-hover: var(--button-background-color);
@@ -385,7 +385,7 @@ a{
   padding:0.5rem;
   /* border:solid red 2px; */
   border-radius: 20px;
-  box-shadow: 5px 5px 20px 0px rgba(253, 249, 0, 0.904);
+  box-shadow: 5px 5px 20px 0px #fdf900e7;
 }
 
 .banner p{

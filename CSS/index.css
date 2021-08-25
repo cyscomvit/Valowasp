@@ -369,6 +369,12 @@ img {
   color:white;
 }
 
+@media  only screen and (max-width:500px) {
+    .banner, .register{
+      border-radius: 1rem !important;
+    }
+}
+
 .register{
   background-image: url('../images/val24.png');
   background-size: cover;

@@ -101,7 +101,7 @@ logo img{
     --button-text-color-hover: var(--button-background-color);
     --border-color: #7D8082;
     --button-background-color: #ece8e1;
-    --highlight-color: #088619d2;
+    --highlight-color: #27b439d7;
     --button-inner-border-color: transparent;
     --button-bits-color: var(--background-color);
     --button-bits-color-hover: var(--button-background-color);
@@ -250,9 +250,12 @@ body{
         font-size: 1.8rem;
     }
 } */
+ul{
+  list-style-type: none;
+}
 
 li{
-    margin-bottom:0.5rem;
+    margin:0.5rem;
 }
 
 
@@ -260,7 +263,7 @@ li{
     margin-top:1rem;
     margin-bottom:1rem;
     font-size: 2rem;
-    text-align: center;
+    text-align: justify;
 }
 
 .register-btn{
@@ -271,7 +274,19 @@ li{
 .instr{
   background: linear-gradient(rgba(0, 0, 0, 0.781),rgba(0, 0, 0, 0.788));
   padding: 1rem;
-  border-bottom-left-radius: 5rem;
-  border-top-right-radius: 5rem;
+  border-radius: 5rem;
   /* border-radius: 5rem; */
+}
+
+.list1 h1, .comment{
+  text-align: center !important;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+@media only screen and (max-width:400px ) {
+  .list1{
+    font-size: 1.25rem;
+  }
+  
 }
