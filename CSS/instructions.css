@@ -229,6 +229,10 @@ a{
     font-size: 2rem;
 }
 
+section{
+  margin-bottom: 2rem;
+}
+
 body{
     background-image: url('../images/val36.jpg');
     background-position: center;
@@ -255,14 +259,16 @@ ul{
 }
 
 li{
-    margin:0.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+
 }
 
 
 .para1{
     margin-top:1rem;
     margin-bottom:1rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: justify;
 }
 
@@ -282,6 +288,10 @@ li{
   text-align: center !important;
   margin-bottom: 2rem;
   font-size: 1.8rem;
+}
+
+.indent-me{
+  margin-left:1rem;
 }
 
 @media only screen and (max-width:400px ) {
