@@ -355,8 +355,7 @@ img {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin: 2rem 0;
   padding:0.5rem;
   /* border:solid red 2px; */
   border-radius: 20px;
@@ -380,8 +379,7 @@ img {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin: 2rem 0;
   padding:0.5rem;
   /* border:solid red 2px; */
   border-radius: 20px;
