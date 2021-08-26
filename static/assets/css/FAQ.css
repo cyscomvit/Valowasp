@@ -30,7 +30,7 @@ background: linear-gradient(to top, #190A05, #870000); /* W3C, IE 10+/ Edge, Fir
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-image: url("../images/val9.png");
+    background-image: url("../img/val9.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;

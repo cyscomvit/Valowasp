@@ -22,8 +22,8 @@ app=Flask(__name__)
 
 
 
-# app.config["MONGO_URI"] = "mongodb://localhost:27017/users"
-app.config["MONGO_URI"]=MONGO_URI
+app.config["MONGO_URI"] = "mongodb://localhost:27017/users"
+# app.config["MONGO_URI"]=MONGO_URI
 mongodb_client = PyMongo(app)
 db = mongodb_client.db
 
@@ -82,6 +82,10 @@ def data():
 def index():
     return render_template('index.html')
 
+@app.route('/schedule')
+def schedule():
+    return render_template('schedule.html')
+
 @app.route('/data')
 def register():
     return render_template('data.html')
@@ -90,9 +94,23 @@ def register():
 def rules():
     return render_template('Rules.html')
 
-@app.route('/faq')
+@app.route('/FAQ')
 def faqs():
     return render_template('FAQ.html')
+
+@app.route('/Timeline')
+def timeline():
+    return render_template('Timeline.html')
+
+@app.route('/Instructions')
+def instructions():
+    return render_template('Instructions.html')
+
+
+
+
+
+
 
 
 

@@ -23,7 +23,7 @@ background: linear-gradient(to top, #190A05, #870000); /* W3C, IE 10+/ Edge, Fir
   }
 
 body {
-    background-image: url('../images/val20.png');
+    background-image: url('../img/val20.png');
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;

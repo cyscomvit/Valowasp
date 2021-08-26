@@ -50,7 +50,7 @@ background: linear-gradient(to top, #190A05, #870000); /* W3C, IE 10+/ Edge, Fir
 .main-header{
     background-image:
     linear-gradient(to bottom, rgba(26, 14, 14, 0.459), rgba(0, 0, 0, 0)),
-    url('../images/val2.jpg');
+    url('../img/val2.jpg');
     background-position:top;
     background-size: cover;
     background-repeat: no-repeat;
@@ -263,7 +263,7 @@ a{
 /* -------------------------------------Section---------------------------------------------------- */
 
 section{
-    background-image: url('../images/val6.jpg');
+    background-image: url('../img/val6.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -351,7 +351,7 @@ img {
 
 
 .banner{
-  background-image: url('../images/val21.jpg');
+  background-image: url('../img/val21.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -375,7 +375,7 @@ img {
 }
 
 .register{
-  background-image: url('../images/val24.png');
+  background-image: url('../img/val24.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
