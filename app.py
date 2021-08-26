@@ -7,9 +7,9 @@ from flask_pymongo import PyMongo
 import flask
 from flask.json import jsonify
 from dotenv import load_dotenv
-load_dotenv()
+# load_dotenv()
 import os
-MONGO_URI = os.getenv("mongouri")
+# MONGO_URI = os.getenv("mongouri")
 
 
 
@@ -22,10 +22,10 @@ app=Flask(__name__)
 
 
 
-app.config["MONGO_URI"] = "mongodb://localhost:27017/users"
+# app.config["MONGO_URI"] = "mongodb://localhost:27017/users"
 # app.config["MONGO_URI"]=MONGO_URI
-mongodb_client = PyMongo(app)
-db = mongodb_client.db
+client = pymongo.MongoClient("")
+db = client.valo
 
 @app.route("/add_one")
 def add_one():
@@ -62,7 +62,9 @@ def data():
         data['Valo_id5']=request.form['Vid5']
         data['Player_level5']=request.form['playerLevel5']
 
-        if db.valo.find_one({"Email_id_team_lead":data['Email_id_team_lead']}):
+        data['Transcation_id']=request.form['Tid']
+      
+        if db.valo_owasp.find_one({"Email_id_team_lead":data['Email_id_team_lead']}):
             return jsonify({"error":"Email address already in use"}),400
         db.valo_owasp.insert_one(data)
         return render_template('index.html')
