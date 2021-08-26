@@ -24,7 +24,7 @@ app=Flask(__name__)
 
 # app.config["MONGO_URI"] = "mongodb://localhost:27017/users"
 # app.config["MONGO_URI"]=MONGO_URI
-client = pymongo.MongoClient("mongodb+srv://jeeva:1ckQA77SKxHhWiD7@api.hwuwg.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+client = pymongo.MongoClient("")
 db = client.valo
 
 @app.route("/add_one")
