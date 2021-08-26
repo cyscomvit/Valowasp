@@ -241,3 +241,7 @@ select{
   --button-text-color-hover: #ece8e1;
   --button-bits-color-hover: #ece8e1;
 }
+
+.memberContainer {
+  display: none;
+}
