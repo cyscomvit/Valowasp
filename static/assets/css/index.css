@@ -427,3 +427,11 @@ footer li{
 .btn-green {
   --highlight-color: #07ce4a !important;
 }
+
+.error{
+  color: #ffffff;
+  font: size 300px;
+  position: absolute;
+  width: 100%;
+  z-index: 999999;
+}

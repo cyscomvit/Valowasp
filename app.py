@@ -9,6 +9,11 @@ from flask.json import jsonify
 from dotenv import load_dotenv
 load_dotenv()
 import os
+from wtforms import StringField, TextAreaField, SubmitField
+from wtforms import Form, BooleanField, StringField, PasswordField, validators
+from wtforms.validators import DataRequired
+from wtforms.validators import DataRequired, Email
+import re
 MONGO_URI = os.getenv("MONGO_URI")
 
 
@@ -35,6 +40,11 @@ def add_one():
 
 @app.route("/data",methods=["POST","GET"])
 def data():
+    message=''
+    phone_no=''
+    discord_id=''
+    valorant_id=''
+    success=''
     data={}
     if request.method=="POST":
         data['Team_name']=request.form['TeamName']
@@ -63,11 +73,64 @@ def data():
         data['Player_level5']=request.form['playerLevel5']
 
         data['Transcation_id']=request.form['Tid']
-      
+        # email_found = db.valo_owasp.find_one({"email": email})
+        
+        email=request.form.get("Email_id_team_lead")
+
+        # if email_found:
+        #     message="This email already exists"
+        #     return jsonify({"error":"Email address already in use"}),400
+        #     return render_template('index.html', message=message)
         if db.valo_owasp.find_one({"Email_id_team_lead":data['Email_id_team_lead']}):
-            return jsonify({"error":"Email address already in use"}),400
+             message="This email already exists"
+             return render_template('data.html',message=message)
+            #  return jsonify({"error":"Email address already in use"}),400
+
+        if len(data['Contact_no_team_lead'])!=10:
+            print(len(data['Contact_no_team_lead']))
+            phone_no="Please enter a valid phone number"
+            return render_template('data.html',phone_no=phone_no)
+        
+        Pattern = re.compile("^.{3,32}#[0-9]{4}$")
+
+        for i in range(1,int(data['No_members'])+1):
+            dis_id='Discord_id'+str(i)
+            if (Pattern.match(dis_id)):
+                print("Match found")
+
+            else:
+                print('No Match found')
+                discord_id='Enter Valid Discord ID for Player '+str(i)
+                return render_template('data.html',discord_id = discord_id)
+
+        for i in range(1,int(data['No_members'])+1):
+            valo_id='Valo_id'+str(i)
+            if(Pattern.match(data[valo_id])):
+                print("matched valo id")
+            else:
+                valorant_id="Please enter a valid valorant id for player"+str(i)
+                return render_template("data.html",valorant_id=valorant_id)
+           
+
+
+
+
+        
+
+            
+
+        # if(data['Discord_id1'])!="~ /^\D+#\d{4}$/":
+        #     discord_id="Please enter a valid discord_id"
+        #     return render_template('index.html',discord_id=discord_id)
+
+
+
+      
+        # if db.valo_owasp.find_one({"Email_id_team_lead":data['Email_id_team_lead']}):
+        #     return jsonify({"error":"Email address already in use"}),400
         db.valo_owasp.insert_one(data)
-        return render_template('index.html')
+        success='registration succesfull'
+        return render_template('index.html',success=success)
 
         
         
