@@ -7,9 +7,9 @@ from flask_pymongo import PyMongo
 import flask
 from flask.json import jsonify
 from dotenv import load_dotenv
-# load_dotenv()
+load_dotenv()
 import os
-# MONGO_URI = os.getenv("mongouri")
+MONGO_URI = os.getenv("MONGO_URI")
 
 
 
@@ -23,8 +23,8 @@ app=Flask(__name__)
 
 
 # app.config["MONGO_URI"] = "mongodb://localhost:27017/users"
-# app.config["MONGO_URI"]=MONGO_URI
-client = pymongo.MongoClient("")
+app.config["MONGO_URI"]=MONGO_URI
+client = pymongo.MongoClient(MONGO_URI)
 db = client.valo
 
 @app.route("/add_one")

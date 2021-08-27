@@ -13,6 +13,9 @@ function containerSelected(num) {
   for (var i = 0; i < num; i++) {
     memberContainer[i].style.display = "block";
   }
+  for (var i = num; i < 5; i++) {
+    memberContainer[i].style.display = "none";
+  }
 }
 e.onchange = numberSelected;
 numberSelected();
